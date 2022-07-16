@@ -14,7 +14,30 @@ public class ejercici_19 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+         //NUMEROS PRIMOS Y NO PRIMOS 
+        //ENTRADA
+        int numero=7;
+        int antecesores=0;
+        int residuo=0;
+        int contadordivisibles=0;
+        //PROCESO
+        antecesores=numero-1;
+        while (antecesores>1) {
+            if (numero% antecesores==0) {
+                contadordivisibles++;
+                
+            }
+            antecesores--;
+            
+        }
+        //VALIDAR SI ES PRIMO
+        if (contadordivisibles==0) {
+            JOptionPane.showMessageDialog(null, "Es primo");
+            
+        }else{
+            JOptionPane.showMessageDialog(null, "No es primo");
+        }
     }
     
 }
+
